@@ -35,8 +35,9 @@ methods: {
     },
     sumbit(e) {    
         console.log(this.pass)
-        if(this.pass == "TesimSaNaSvadbu"){
-            window.location.href = "/host" + pass 
+        var names = ["ulicna", "sranda", "Apple", "Mango"];
+        if(names.includes(this.pass)){
+            window.location.href = "/host/" + this.pass 
         }
         else{
             this.show_err = true

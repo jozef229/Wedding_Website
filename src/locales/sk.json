@@ -34,6 +34,7 @@
 
   "info_covid": "Vzhľadom na podmienky a situáciu kvôli epidémii Covid-19, veríme, že budeme môcť pozvať všetkých kamarátov, avšak odporúčania vlády ohľadom svadobnej hostiny obmedzujú počet zúčastnených a celá hostina sa bude konať podľa platných predpisov.",
   "info_understand": "Rozumiem",
+  "info_foto": "Ak máte nejaké fotky, ktoré chcete s nami zdieľať, budeme radi. Link na zieľanie je ",
 
   "maps_address": "Adresa",
   "maps_full_address": "Reštaurácia Mladosť, Pod Kalváriou 4183, 080 01 Prešov",
@@ -164,7 +165,7 @@
   "transport_transport_head_name": "Doprava na Ceremóniu",
 
   "transport_hotel_head_name": "Možnosti ubytovania",
-  "transport_hotel_text": "Ubytovanie je možné priamo v reštaurácii, kde sa koná zábava, avšak to ubytovanie je podobné internátom, Ak by mal niekto záujem o nejaké iné / lepšie ubytovanie, stačí nám napísať a pomôžeme vám",
+  "transport_hotel_text": "Ubytovanie je možné priamo v reštaurácii, kde sa koná zábava, avšak to ubytovanie je podobné internátom, Ak by mal niekto záujem o nejaké iné / lepšie ubytovanie, stačí nám napísať a pomôžeme vám. Link na ubytovanie ",
   "transport_hotel_link": "TU",
 
   "headerhost_name": "Párty začína za",
