@@ -1,0 +1,68 @@
+<template>
+  <div id="galery" class="flex justify-center items-center gap-10 flex-col my-6">
+    <h2 class="text-gray-600 text-3xl font-semibold text-center">{{ $t('gallery_name') }}</h2>
+    <MyVideo />    
+    <p>{{ $t('gallery_unmute') }}</p>
+    <div ref="galery" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
+      <div class="test h-48 w-48 transform"
+        v-for="image in images" :key="image">
+        <img class="w-full h-full rounded-lg py-2 px-2 object-cover object-top" :src="image" alt="angger-ulfa">
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import MyVideo from '@/components/video.vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  data() {
+    return {
+      images: [
+        require('@/assets/galery/4.png'),
+        require('@/assets/galery/5.png'),
+        require('@/assets/galery/6.png'),
+        require('@/assets/galery/7.png'),
+        require('@/assets/galery/8.png'),
+        require('@/assets/galery/9.png'),
+        require('@/assets/galery/10.png'),
+        require('@/assets/galery/11.png'),
+        require('@/assets/galery/1.png'),
+        require('@/assets/galery/2.png'),
+      ]
+    }
+  },
+  components: {
+    MyVideo
+  },
+  mounted() {
+    const target = this.$refs.galery.childNodes
+    const tl = gsap.timeline({})
+
+    gsap.utils.toArray(target).forEach(element => {
+      tl.from(element, {
+        y: 12,
+        scale: .6,
+        opacity: 0,
+        // duration: .8,
+        scrub: .8,
+      })    
+    })
+
+    ScrollTrigger.create({
+      trigger: this.$refs.galery,
+      animation: tl,
+      start: "top center",
+      end: "+=50",
+
+      autoAlpha: 1, 
+      ease: "power1.in",
+      overwrite: "auto",
+    })
+  },
+}
+</script>

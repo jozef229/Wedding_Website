@@ -1,0 +1,36 @@
+{
+  "name": "jofy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.9.1",
+    "cors": "^2.8.5",
+    "gsap": "^3.6.0",
+    "mdbvue": "^6.7.2",
+    "simple-vue-timeline": "^2.0.8",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
+    "vue-i18n": "^8.22.3",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vue-cli-plugin-i18n": "~2.1.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

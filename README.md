@@ -1,1 +1,1 @@
-# Wedding_Website
+This is weddings website :D
