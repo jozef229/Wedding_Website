@@ -6,7 +6,9 @@
     <div ref="galery" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
       <div class="test h-48 w-48 transform"
         v-for="image in images" :key="image">
-        <img class="w-full h-full rounded-lg py-2 px-2 object-cover object-top" :src="image" alt="angger-ulfa">
+        <div class="py-2 px-2">
+          <img class="w-full h-full rounded-lg object-cover object-top" :src="image" alt="angger-ulfa">
+        </div>
       </div>
     </div>
   </div>

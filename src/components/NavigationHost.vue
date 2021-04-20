@@ -56,13 +56,13 @@ export default {
       
     },
     showModal() {
-      // this.$modal.show('newRspv')
-      if(this.$i18n.locale == 'en'){
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScFcxPfZyZOEdWMRdCPqKbP5gUdWT811KlnINPG4yi8o3sxWA/viewform?usp=sf_link"
-        }
-      else {
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSecxP8S8pK8POWUQJBiAi3wQY3__z0pzCDtne8l6NbjfMuCbw/viewform?usp=sf_link "
-      }
+      this.$modal.show('newRspv')
+      // if(this.$i18n.locale == 'en'){
+      //   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScFcxPfZyZOEdWMRdCPqKbP5gUdWT811KlnINPG4yi8o3sxWA/viewform?usp=sf_link"
+      //   }
+      // else {
+      //   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSecxP8S8pK8POWUQJBiAi3wQY3__z0pzCDtne8l6NbjfMuCbw/viewform?usp=sf_link "
+      // }
     },
     clientWidth(){
       console.log(window.innerWidth)
