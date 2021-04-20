@@ -66,6 +66,7 @@ export default {
     }
   },
   mounted() {
+    document.title = "Jožo a Mima"  
     const trigger = [
       this.$refs.trigger3,
       this.$refs.trigger4,

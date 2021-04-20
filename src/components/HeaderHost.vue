@@ -101,6 +101,8 @@ export default {
             }
         },
         dataPicker: function() {
+
+            document.title = "Jožo a Mima"  
             this.picker = setInterval(() => {
                 const now = new Date().getTime();
                 const distance = this.countDownDate - now;

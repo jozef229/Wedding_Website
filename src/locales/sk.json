@@ -34,7 +34,7 @@
 
   "info_covid": "Vzhľadom na podmienky a situáciu kvôli epidémii Covid-19, veríme, že budeme môcť pozvať všetkých kamarátov, avšak odporúčania vlády ohľadom svadobnej hostiny obmedzujú počet zúčastnených a celá hostina sa bude konať podľa platných predpisov.",
   "info_understand": "Rozumiem",
-  "info_foto": "Ak máte nejaké fotky, ktoré chcete s nami zdieľať, budeme radi. Link na zieľanie je ",
+  "info_foto": "Ak máte nejaké fotky, ktoré chcete s nami zdieľať, budeme radi. Link na zdieľanie je ",
 
   "maps_address": "Adresa",
   "maps_full_address": "Reštaurácia Mladosť, Pod Kalváriou 4183, 080 01 Prešov",
@@ -78,7 +78,7 @@
   "people_refresh": "obnoviť",
 
   "newpost_new_message": "Poslať správu",
-  "newpost_name": "Názov",
+  "newpost_name": "Meno",
   "newpost_message": "Správa",
   "newpost_relation": "Vzťah",
   "newpost_family": "Rodina",
@@ -116,23 +116,23 @@
   "programtimeline_name_1": "15:00 Obrad, nasleduje fotenie a gratulácie",
   "programtimeline_text_1": "Obrad v konkatedrále svätého Mikuláša v Prešove. Po obrade sa následne blahoželá mladomanželom pred kostolom + nasleduje fotenie",
   "programtimeline_name_2": "16:20 Presun do reštaurácie",
-  "programtimeline_text_2": "Presun bude organizovaný autami. Všeci sa spoločne presunieme do Mladosti",
+  "programtimeline_text_2": "Presun bude organizovaný autami. Všetci sa spoločne presunieme do Mladosti",
   "programtimeline_name_3": "17:00 Prípitok",
   "programtimeline_text_3": "Nasleduje prípitok spolu s príhovorom",
-  "programtimeline_name_4": "17:20 Zranica",
+  "programtimeline_name_4": "17:20 Papkanie",
   "programtimeline_text_4": "Konečne sa ide jesť :D",
   "programtimeline_name_5": "18:00 Prvý tanec a tancovačka",
   "programtimeline_text_5": "Ako sa patrí, nasleduje prvý tanec mladomanželov a samozrejme tancovačka",
   "programtimeline_name_6": "20:00 Spoločné fotenie a fotokútik",
-  "programtimeline_text_6": "Aby nebola nuda, môžeme sa spolu odfotit so srandovnými maskami",
+  "programtimeline_text_6": "Aby nebola nuda, môžeme sa spolu odfotiť so srandovnými maskami",
   "programtimeline_name_7": "21:30 Otvorenie studeného bufetu",
-  "programtimeline_text_7": "A čo teraz ? No predsa ďalšie jedlo, avšak teraz sa len otvorí teplý a studený bufet.",
+  "programtimeline_text_7": "A čo teraz ? No predsa ďalšie jedlo, avšak teraz sa len otvorí teplý a studený bufet",
   "programtimeline_name_8": "22:00 Program",
   "programtimeline_text_8": "Kúsok zábavy ako tombola a nejaké tie hry",
   "programtimeline_name_9": "00:00 Čepenie a redový",
   "programtimeline_text_9": "Teraz sa tancuje s nevestou až pokiaľ jej nohy slúžia",
   "programtimeline_name_10": "01:00 Zábava až do rána",
-  "programtimeline_text_10": "Tancovanie pitie a dookola",
+  "programtimeline_text_10": "Tancovanie, pitie a dookola",
   "programtimeline_name_11": "Koniec",
   "programtimeline_text_11": "Zazvonil zvonec a rozprávky je koniec. PS: samozrejme žili šťastne až kým nepomreli",
 
@@ -172,7 +172,7 @@
   "headerhost_invitation": "Potvrdenie alebo odmietnutie pozvania na svadbu",
 
   "weddinggift_name": "Svadobné dary",
-  "weddinggift_text": "Jediný dar, ktorý chceme je ten, aby ste nám prišli na svadbu. Prosím, nenoste kvety. Naozaj, je to škoda a akurát zvädnú. Ak naozaj chcete niečo doniesť, radšej doneste nejaký žreb. A čo sa týka darov? Naozaj, v dnešnej dobe netreba míňať na hlúposti radšej si odložte a keď niečo silou mocou doniesť musíte, skúste niečo vyrobiť.",
+  "weddinggift_text": "Jediný dar, ktorý chceme je ten, aby ste nám prišli na svadbu. Prosím, nenoste kvety. Naozaj, je to škoda a akurát zvädnú. Ak naozaj chcete niečo doniesť, radšej doneste nejaký žreb, poprípade niečo vami vyrobené.",
 
   "information_name": "Ďalšie informácie",
   "information_text": "Tu sa budú nachádzať ďalšie informácie o svadbe, ktoré môžu byť pre vás zaujímavé."
