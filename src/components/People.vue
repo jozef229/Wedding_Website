@@ -8,7 +8,7 @@
     </div>
     <div class="grid grid-rows-3 grid-cols-1 lg:grid-cols-2 grid-flow-row gap-y-4 gap-x-10 mb-32 px-10  overflow-y-auto h-auto scroll-snap-x">
       
-      <div class="flex flex-row gap-3 bg-gray-900 bg-opacity-60 p-4 rounded-md sm:w-96 h-40 shadow-lg"
+      <div class="flex flex-row gap-3 bg-gray-900 bg-opacity-60 p-4 rounded-md w-72 sm:w-96 h-40 shadow-lg"
         v-for="people in this.$store.state.peoples.slice(item_min, item_max)" :key='people.id'>
 
         <img class="animate-pulse rounded-full w-16 h-16 p-1 m-1 ring ring-pink-600" src="https:\/\/simpuslerep.com\/data\/img\/display-picture\/user\/no-image.png" :alt="people.name">        
@@ -114,7 +114,7 @@ export default {
   },
   mounted() {
     this.$store.commit('loadPeople')
-    console.log(this.$store.state.peoples)
+    // console.log(this.$store.state.peoples)
   },
   methods: {
     showModal() {

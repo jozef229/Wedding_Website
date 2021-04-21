@@ -1,8 +1,7 @@
 <template>
   <div id="galery" class="flex justify-center items-center gap-10 flex-col my-6">
     <h2 class="text-gray-600 text-3xl font-semibold text-center">{{ $t('gallery_name') }}</h2>
-    <MyVideo />    
-    <p>{{ $t('gallery_unmute') }}</p>
+    <iframe id="ytplayer" type="text/html" width="640" height="360" :src="'https://www.youtube.com/embed/Jx4MU9yxlFU?autoplay=0&origin=http://example.com'" frameborder="0"></iframe>
     <div ref="galery" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
       <div class="test h-48 w-48 transform"
         v-for="image in images" :key="image">
@@ -15,7 +14,6 @@
 </template>
 
 <script>
-import MyVideo from '@/components/video.vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -37,9 +35,6 @@ export default {
         require('@/assets/galery/2.png'),
       ]
     }
-  },
-  components: {
-    MyVideo
   },
   mounted() {
     const target = this.$refs.galery.childNodes

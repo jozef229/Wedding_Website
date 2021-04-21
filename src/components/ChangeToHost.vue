@@ -34,7 +34,7 @@ methods: {
         this.$modal.hide('newChangeToHost')
     },
     sumbit(e) {    
-        console.log(this.pass)
+        // console.log(this.pass)
         var names = ["ulicna", "sranda", "Apple", "Mango"];
         if(names.includes(this.pass)){
             window.location.href = "/host/" + this.pass 

@@ -19,9 +19,9 @@ export default new Vuex.Store({
         .then(respone => respone.data)
         .then(json => {
           this.state.peoples = json.data
-          console.log(json.data)
+          // console.log(json.data)
           if (json.status == 'ok') {
-            console.log(json.data)
+            // console.log(json.data)
             this.state.peoples = json.data
           }
         })

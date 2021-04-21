@@ -62,8 +62,8 @@ export default {
       }
       else{
         this.cw = true
-        console.log("asd")
-        console.log(this.previous_size)
+        // console.log("asd")
+        // console.log(this.previous_size)
         if(this.previous_size == window.innerWidth){
           this.previous_size = window.innerWidth
         }

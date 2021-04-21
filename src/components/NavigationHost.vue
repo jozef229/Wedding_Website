@@ -65,7 +65,7 @@ export default {
       // }
     },
     clientWidth(){
-      console.log(window.innerWidth)
+      // console.log(window.innerWidth)
       if(window.innerWidth > 1024){
         this.cw = false
         this.isOpen = true
