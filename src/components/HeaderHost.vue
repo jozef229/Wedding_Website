@@ -34,20 +34,20 @@
     <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
         <div class="grid sm:grid-cols-1 grid-cols-1">
             <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
-                <h2 class="text-gray-600 mb-5 mt-5 text-3xl font-semibold text-center">{{ personalized.name }}</h2>
+                <h2 class="text-gray-600 mt-10 text-3xl font-semibold text-center">{{ personalized.name }}</h2>
                 <!-- <div class="flex-none w-80"></div> -->
                 <!-- <div class="flex-grow w-auto w-96">
                     <p class="text-gray-600 text-base text-center max-w-lg">{{ personalized.text}}</p>
                 </div> -->
             </div>
-            <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
+            <div class="pb-10 flex flex-row justify-center items-center flex-col p-4 gap-4">
                 <img class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" alt="Prvý pokus">
             </div>
         </div> 
     </div>  
 
 
-    <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
+    <!-- <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
         <div class="grid sm:grid-cols-2 grid-cols-1">
             <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
                 <img class="flex-shrink h-64 rounded-lg shadow-lg" :src="personalized.image" alt="Prvý pokus">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div> 
-    </div>  
+    </div>   -->
 
 
     </div>
