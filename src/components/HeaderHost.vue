@@ -31,6 +31,20 @@
 
 
 
+    <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
+        <div class="grid sm:grid-cols-1 grid-cols-1">
+            <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
+                <h2 class="text-gray-600 mb-5 mt-5 text-3xl font-semibold text-center">{{ personalized.name }}</h2>
+                <!-- <div class="flex-none w-80"></div> -->
+                <!-- <div class="flex-grow w-auto w-96">
+                    <p class="text-gray-600 text-base text-center max-w-lg">{{ personalized.text}}</p>
+                </div> -->
+            </div>
+            <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
+                <img class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" alt="Prvý pokus">
+            </div>
+        </div> 
+    </div>  
 
 
     <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
@@ -57,6 +71,23 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ulicna from "../assets/personalized/ulicna.png"
+import halaga from "../assets/personalized/halaga.png"
+import havadej from "../assets/personalized/havadej.png"
+import holodnakova from "../assets/personalized/holodnakova.png"
+import marcinkovci from "../assets/personalized/marcinkovci.png"
+import palko from "../assets/personalized/palko.png"
+import tothova from "../assets/personalized/tothova.png"
+import vargovci from "../assets/personalized/vargovci.png"
+import onofrejova from "../assets/personalized/onofrejova.png"
+import bulikovci from "../assets/personalized/bulikovci.png"
+import gutyan from "../assets/personalized/gutyan.png"
+import hurtikova from "../assets/personalized/hurtikova.png"
+import sabovci from "../assets/personalized/sabovci.png"
+import steiner from "../assets/personalized/steiner.png"
+import steinerovci from "../assets/personalized/steinerovci.png"
+import vojtko from "../assets/personalized/vojtko.png"
+import brasko from "../assets/personalized/brasko.png"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,6 +115,70 @@ export default {
                     this.personalized.image = ulicna
                     this.personalized.name = "Dakujeme michi ze si tu"
                     this.personalized.text = "Dakujeme michi ze si tu"
+                }
+                else if(pass == "halaga"){
+                    this.personalized.image = halaga
+                    this.personalized.name = "Ahoj dakujeme ze prides halaga"
+                }
+                else if(pass == "havadej"){
+                    this.personalized.image = havadej
+                    this.personalized.name = "Ahoj dakujeme ze prides havadej"
+                }
+                else if(pass == "holodnakova"){
+                    this.personalized.image = holodnakova
+                    this.personalized.name = "Ahoj dakujeme ze prides holodnakova"
+                }
+                else if(pass == "marcinkovci"){
+                    this.personalized.image = marcinkovci
+                    this.personalized.name = "Ahoj dakujeme ze prides marcinkovci"
+                }
+                else if(pass == "palko"){
+                    this.personalized.image = palko
+                    this.personalized.name = "Ahoj dakujeme ze prides palko"
+                }
+                else if(pass == "tothova"){
+                    this.personalized.image = tothova
+                    this.personalized.name = "Ahoj dakujeme ze prides tothova"
+                }
+                else if(pass == "vargovci"){
+                    this.personalized.image = vargovci
+                    this.personalized.name = "Ahoj dakujeme ze prides vargovci"
+                }
+                else if(pass == "onofrejova"){
+                    this.personalized.image = onofrejova
+                    this.personalized.name = "Ahoj dakujeme ze prides onofrejova"
+                }
+                else if(pass == "bulikovci"){
+                    this.personalized.image = bulikovci
+                    this.personalized.name = "Ahoj dakujeme ze prides bulikovci"
+                }
+                else if(pass == "gutyan"){
+                    this.personalized.image = gutyan
+                    this.personalized.name = "Ahoj dakujeme ze prides gutyan"
+                }
+                else if(pass == "hurtikova"){
+                    this.personalized.image = hurtikova
+                    this.personalized.name = "Ahoj dakujeme ze prides hurtikova"
+                }
+                else if(pass == "sabovci"){
+                    this.personalized.image = sabovci
+                    this.personalized.name = "Ahoj dakujeme ze prides sabovci"
+                }
+                else if(pass == "steiner"){
+                    this.personalized.image = steiner
+                    this.personalized.name = "Ahoj dakujeme ze prides steiner"
+                }
+                else if(pass == "steinerovci"){
+                    this.personalized.image = steinerovci
+                    this.personalized.name = "Ahoj dakujeme ze prides steinerovci"
+                }
+                else if(pass == "vojtko"){
+                    this.personalized.image = vojtko
+                    this.personalized.name = "Ahoj dakujeme ze prides vojtko"
+                }
+                else if(pass == "brasko"){
+                    this.personalized.image = brasko
+                    this.personalized.name = "Ahoj dakujeme ze prides brasko"
                 }
                 // else if(pass == ""){
                 //     this.personalized.image = 

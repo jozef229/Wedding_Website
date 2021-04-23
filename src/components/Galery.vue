@@ -8,7 +8,7 @@
       <div class="test h-48 w-48 transform"
         v-for="image in images" :key="image">
         <div class="py-2 px-2">
-          <img class="w-full h-full rounded-lg object-cover object-top" :src="image" alt="angger-ulfa">
+          <img class="w-full h-full rounded-lg object-cover object-top" :src="image" alt="jozef-mima">
         </div>
       </div>
     </div>

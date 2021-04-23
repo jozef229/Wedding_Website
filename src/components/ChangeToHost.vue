@@ -35,7 +35,7 @@ methods: {
     },
     sumbit(e) {    
         // console.log(this.pass)
-        var names = ["ulicna", "sranda", "Apple", "Mango"];
+        var names = ["ulicna", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "tothova", "vargovci", "onofrejova", "bulikovci", "gutyan", "hurtikova", "sabovci", "steiner", "steinerovci", "vojtko", "brasko"];
         if(names.includes(this.pass)){
             window.location.href = "/host/" + this.pass 
         }
