@@ -1,55 +1,55 @@
 <template>
     <div id="surroundings" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center">
         <h2 class="text-gray-600 mb-5 mt-20 text-3xl font-semibold text-center">{{ $t('surroundings_name_PM') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PM.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PM.jpg">
         <p v-html="$t('surroundings_PM')" class=" mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_PK') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PK.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PK.jpg">
         <p v-html="$t('surroundings_PK')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_SVP') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SVP.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SVP.jpg">
         <p v-html="$t('surroundings_SVP')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_PS') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PS.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/PS.jpg">
         <p v-html="$t('surroundings_PS')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_SH') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SH.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SH.jpg">
         <p v-html="$t('surroundings_SH')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_KH') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/KH.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/KH.jpg">
         <p v-html="$t('surroundings_KH')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_SOP') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SOP.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SOP.jpg">
         <p v-html="$t('surroundings_SOP')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_SNVB') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SNVB.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/SNVB.jpg">
         <p v-html="$t('surroundings_SNVB')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_VT') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/VT.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/VT.jpg">
         <p v-html="$t('surroundings_VT')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_BCKS') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/BCKS.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/BCKS.jpg">
         <p v-html="$t('surroundings_BCKS')" class="mt-5 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
         <h2 class="text-gray-600 mb-5 mt-10 text-3xl font-semibold text-center">{{ $t('surroundings_name_BAR') }}</h2>
-        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/BAR.png">
+        <img class="rounded-lg shadow-md my-2 w-4/5 lg:w-2/5" src="@/assets/surroundings/BAR.jpg">
         <p v-html="$t('surroundings_BAR')" class="mt-5 mb-10 text-gray-600 text-base text-justify lg:max-w-3xl w-auto mx-8 sm:mx-16"></p>
 
         
@@ -66,16 +66,16 @@ export default {
     data() {
         return {
         images: [
-            require('@/assets/galery/4.png'),
-            require('@/assets/galery/5.png'),
-            require('@/assets/galery/6.png'),
-            require('@/assets/galery/7.png'),
-            require('@/assets/galery/8.png'),
-            require('@/assets/galery/9.png'),
-            require('@/assets/galery/10.png'),
-            require('@/assets/galery/11.png'),
-            require('@/assets/galery/1.png'),
-            require('@/assets/galery/2.png'),
+            require('@/assets/galery/4.jpg'),
+            require('@/assets/galery/5.jpg'),
+            require('@/assets/galery/6.jpg'),
+            require('@/assets/galery/7.jpg'),
+            require('@/assets/galery/8.jpg'),
+            require('@/assets/galery/9.jpg'),
+            require('@/assets/galery/10.jpg'),
+            require('@/assets/galery/11.jpg'),
+            require('@/assets/galery/1.jpg'),
+            require('@/assets/galery/2.jpg'),
         ]
           //  ps http://www.stm-ke.sk/index.php/sk/pobocky-2/solivar-pri-presove
         // op https://www.slovenskeopalovebane.sk/

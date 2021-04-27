@@ -24,7 +24,7 @@
             {{ $t('info_Surroundings') }}
         </div>
         
-        <img class="shadow-md mt-8 my-2 w-4/5 sm:w-2/5" src="@/assets/traveler.png" @click="goSurroundings()">
+        <img class="shadow-md mt-8 my-2 w-4/5 sm:w-2/5" src="@/assets/traveler.jpg" @click="goSurroundings()">
     </div>  
     
 </template>

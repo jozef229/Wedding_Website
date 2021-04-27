@@ -69,23 +69,23 @@
 <script>
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import ulicna from "../assets/personalized/ulicna.png"
-import halaga from "../assets/personalized/halaga.png"
-import havadej from "../assets/personalized/havadej.png"
-import holodnakova from "../assets/personalized/holodnakova.png"
-import marcinkovci from "../assets/personalized/marcinkovci.png"
-import palko from "../assets/personalized/palko.png"
-import tothova from "../assets/personalized/tothova.png"
-import vargovci from "../assets/personalized/vargovci.png"
-import onofrejova from "../assets/personalized/onofrejova.png"
-import bulikovci from "../assets/personalized/bulikovci.png"
-import gutyan from "../assets/personalized/gutyan.png"
-import hurtikova from "../assets/personalized/hurtikova.png"
-import sabovci from "../assets/personalized/sabovci.png"
-import steiner from "../assets/personalized/steiner.png"
-import steinerovci from "../assets/personalized/steinerovci.png"
-import vojtko from "../assets/personalized/vojtko.png"
-import brasko from "../assets/personalized/brasko.png"
+import ulicna from "../assets/personalized/ulicna.jpg"
+import halaga from "../assets/personalized/halaga.jpg"
+import havadej from "../assets/personalized/havadej.jpg"
+import holodnakova from "../assets/personalized/holodnakova.jpg"
+import marcinkovci from "../assets/personalized/marcinkovci.jpg"
+import palko from "../assets/personalized/palko.jpg"
+import tothova from "../assets/personalized/tothova.jpg"
+import vargovci from "../assets/personalized/vargovci.jpg"
+import onofrejova from "../assets/personalized/onofrejova.jpg"
+import bulikovci from "../assets/personalized/bulikovci.jpg"
+import gutyan from "../assets/personalized/gutyan.jpg"
+import hurtikova from "../assets/personalized/hurtikova.jpg"
+import sabovci from "../assets/personalized/sabovci.jpg"
+import steiner from "../assets/personalized/steiner.jpg"
+import steinerovci from "../assets/personalized/steinerovci.jpg"
+import vojtko from "../assets/personalized/vojtko.jpg"
+import brasko from "../assets/personalized/brasko.jpg"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -100,7 +100,7 @@ export default {
         countDownDate: '',
         showPersonalized: true,
         personalized: {        
-            image: require('@/assets/mima.png'),
+            image: require('@/assets/mima.jpg'),
             text: ''
         },
         picker: ''
@@ -185,12 +185,12 @@ export default {
                 //     this.personalized.text = ""
                 // }
                 else {
-                    this.personalized.image = require('@/assets/mima.png')
+                    this.personalized.image = require('@/assets/mima.jpg')
                     return false
                 }
                 return true
             } catch (e) {
-                this.personalized.image = require('@/assets/mima.png')
+                this.personalized.image = require('@/assets/mima.jpg')
                 return false
             }
         },
@@ -236,7 +236,7 @@ export default {
     #header {
         background-image: 
         linear-gradient(0deg, #00000088 30%, #ffffff44 110%), 
-        url('~@/assets/help2.png');
+        url('~@/assets/help2.jpg');
         clip-path: polygon(100% -64px, 100% 90%, 50% 100%, 0 90%, 0 -64px);
         background-repeat:no-repeat;
         -webkit-background-size:cover;

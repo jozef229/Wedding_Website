@@ -31,14 +31,14 @@
 
     <div class="grid sm:grid-cols-2 grid-cols-1">
       <div ref="trigger" class="flex flex-col justify-start items-center p-4 border border-gray-200">
-        <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/mima.png" alt="mima">
+        <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/mima.jpg" alt="mima">
         <p class="text-gray-700 font-bold text-base mt-2">{{ $t('bigheader_bride') }}</p>
         <p class="text-2xl text-gray-600 font-quiksand my-3 text-center">{{ $t('bigheader_full_name_mima') }}</p>
         <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_mima_citation') }}</p>
         <sosial-media-mima class="text-gray-700 text-sm" />
       </div>
       <div ref="trigger2" class="flex flex-col justify-start items-center p-4 border border-gray-200">
-        <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/jozo.png" alt="jozef">
+        <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/jozo.jpg" alt="jozef">
         <p class="text-gray-700 font-bold text-base mt-2">{{ $t('bigheader_groom') }}</p>
         <p class="text-2xl text-gray-600 font-quiksand my-3 text-center">{{ $t('bigheader_full_name_jozo') }}</p>
         <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_jozo_citation') }}</p>
@@ -107,7 +107,7 @@ export default {
   #header {
     background-image: 
       linear-gradient(0deg, #00000088 20%, #ffffff44 100%), 
-      url('~@/assets/test3.png');
+      url('~@/assets/test3.jpg');
 
       background-repeat:no-repeat;
       -webkit-background-size:cover;

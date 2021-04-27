@@ -81,25 +81,25 @@ export default {
   data() {
     return {
       meet: {
-        image: require('@/assets/story/meet.png')
+        image: require('@/assets/story/meet.jpg')
       },
       awkward_mima: {        
-        image: require('@/assets/story/awkward_mima.png')
+        image: require('@/assets/story/awkward_mima.jpg')
       },
       awkward_jozo: {        
-        image: require('@/assets/story/awkward_jozo.png')
+        image: require('@/assets/story/awkward_jozo.jpg')
       },
       dance: {        
-        image: require('@/assets/story/dance.png')
+        image: require('@/assets/story/dance.jpg')
       },
       first: {        
-        image: require('@/assets/story/first.png')
+        image: require('@/assets/story/first.jpg')
       },
       request_hand: {        
-        image: require('@/assets/story/story1.png')
+        image: require('@/assets/story/story1.jpg')
       },
       relation: {
-        image: require('@/assets/story/story2.png')
+        image: require('@/assets/story/story2.jpg')
       }
     }
   },

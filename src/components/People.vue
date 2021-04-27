@@ -141,7 +141,7 @@ export default {
 
 <style scoped>
   #people {
-    background-image: url('~@/assets/bg-message.png');    
+    background-image: url('~@/assets/bg-message.jpg');    
     clip-path: polygon(100% -64px, 100% 90%, 50% 100%, 0 90%, 0 -64px);
     /* clip-path: polygon(15% 0, 85% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%); */
   }

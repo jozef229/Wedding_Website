@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
   #countdown {
-    background-image: url('~@/assets/bg_countdown2.jpeg');
+    background-image: url('~@/assets/bg_countdown2.jpg');
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;

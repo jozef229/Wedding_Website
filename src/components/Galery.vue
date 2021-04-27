@@ -25,16 +25,16 @@ export default {
   data() {
     return {
       images: [
-        require('@/assets/galery/4.png'),
-        require('@/assets/galery/5.png'),
-        require('@/assets/galery/6.png'),
-        require('@/assets/galery/7.png'),
-        require('@/assets/galery/8.png'),
-        require('@/assets/galery/9.png'),
-        require('@/assets/galery/10.png'),
-        require('@/assets/galery/11.png'),
-        require('@/assets/galery/1.png'),
-        require('@/assets/galery/2.png'),
+        require('@/assets/galery/4.jpg'),
+        require('@/assets/galery/5.jpg'),
+        require('@/assets/galery/6.jpg'),
+        require('@/assets/galery/7.jpg'),
+        require('@/assets/galery/8.jpg'),
+        require('@/assets/galery/9.jpg'),
+        require('@/assets/galery/10.jpg'),
+        require('@/assets/galery/11.jpg'),
+        require('@/assets/galery/1.jpg'),
+        require('@/assets/galery/2.jpg'),
       ]
     }
   },

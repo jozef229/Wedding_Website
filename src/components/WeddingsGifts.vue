@@ -1,5 +1,5 @@
 <template>
-    <div id="wg" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
+    <div id="wg" class="bg-local bg-right bg-cover w-full flex flex-col justify-center items-center h-96">
         <div class="grid sm:grid-cols-2 grid-cols-1">
             <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
                 
@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
     #wg {
-        background-image: url('~@/assets/bg_gifts_3.png');
+        background-image: url('~@/assets/bg_gifts_3.jpg');
         /* clip-path: polygon(100% 0, 100% calc(100vh - 64px), 50% 100%, 0 calc(100vh - 64px), 0 0); */
         clip-path: polygon(100% 0, 100% 100%, 50% 92%, 0% 100%, 0 0, 50% 8%);
     }
