@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div id="header" class="flex flex-col items-center py-8 h-screen max-h-700 w-auto z-50 bg-center">
-      <div class="w-96 text-center sm:mt-36 md:mt-32 lg:mt-28 mt-32">
+    <div id="header" class="flex flex-col items-center py-8 h-screen max-h-700 min-h-300 w-auto z-50 bg-center">
+      <!-- <div class="w-96 text-center sm:mt-36 md:mt-32 lg:mt-28 mt-32"> -->
+      <div class="sm:w-96 text-center sm:mt-20 md:mt-20 lg:mt-20 mt-20">
         <div class="text-gray-100 text-2xl font-paris font-semibold italic tracking-widest">{{ $t('bigheader_tongue') }}</div>
         <div class="text-gray-100 text-4xl font-quiksand font-semibold mt-4 mb-2">
           <span class="border-t border-b border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('bigheader_mima') }}</span>
@@ -106,8 +107,17 @@ export default {
   #header {
     background-image: 
       linear-gradient(0deg, #00000088 20%, #ffffff44 100%), 
-      url('~@/assets/bg6.png');
+      url('~@/assets/test3.png');
+
+      background-repeat:no-repeat;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-size:cover;
+      background-position:center;
 
     clip-path: polygon(100% 0, 100% calc(100vh - 64px), 50% 100%, 0 calc(100vh - 64px), 0 0);
   }
+  
 </style>
+

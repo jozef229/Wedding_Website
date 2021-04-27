@@ -1,12 +1,18 @@
 <template>
-    <modal name="newRspv" class="rounded-lg" height="auto" :width="widthMax()">
+    <modal name="newRspv" class="rounded-lg" height="80%" :width="widthActual()">
+        <div class="flex center">
+            <button v-on:click.prevent="reset()" class="hover:bg-red-500 hover:text-gray-100 rounded px-4 py-2">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+            </button>
+        </div>
         <div class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center overflow-y-auto">
-            <iframe class="w-full " :src="actualSRC()" :width="widthMax()" :height="heighMax()" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
+            <iframe class="w-full " :src="actualSRC()" style="width:100%; height:95%;position:absolute;top:40px;left:0px;right:0px;bottom:0px"  height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
 
             
-            <!-- <div class="flex center">
-                <button v-on:click.prevent="reset()" class="bg-gray-600 rounded px-8 py-2 my-4 mx-4 text-white-500 hover:bg-red-500 hover:text-gray-100 rounded px-4 py-2">{{ $t('rsvp_cancel') }}</button>
-            </div> -->
         </div>
     </modal>
 </template>
@@ -38,6 +44,28 @@ methods: {
             min = 20
         }
         return window.innerWidth - min
+    },
+    heighActual() {
+        if(window.innerWidth < 500){
+            return "95%"
+        }
+        else if(window.innerWidth < 700){
+            return "75%"
+        }
+        else{
+            return "65%"
+        }
+    },
+    widthActual() {
+        if(window.innerWidth < 500){
+            return "95%"
+        }
+        else if(window.innerWidth < 700){
+            return "75%"
+        }
+        else{
+            return "65%"
+        }
     },
     actualSRC(){
         if(this.$i18n.locale == 'sk'){

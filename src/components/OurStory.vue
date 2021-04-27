@@ -1,8 +1,8 @@
 <template>
   <div id="our-story" ref="panel" class="flex justify-center items-center flex-col overflow-hidden">
     
-    <img class="w-32 h-32" src="@/assets/our-story.png" alt="our-story">
-    <p class="text-center text-gray-600 font-base max-w-sm mt-2">{{ $t('ourstory_quote') }}</p> 
+    <h2 class="mt-8 text-gray-600 text-3xl font-semibold text-center">{{ $t('navigation_our_story') }}</h2>
+    
     <div id='time-line' class="flex flex-col gap-8 my-8 text-right">
       <div ref="snapOne" class="flex md:flex-row-reverse justify-center items-center flex-col gap-4">
         <div class="flex-grow w-80"></div>

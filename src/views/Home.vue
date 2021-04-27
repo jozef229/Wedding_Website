@@ -3,7 +3,6 @@
     <Navigation />
     <big-header />
     <count-down />
-    <Info />
     <our-story />
     <People />
     <Info />
@@ -47,3 +46,4 @@ export default {
   }
 }
 </script>
+

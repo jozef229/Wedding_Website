@@ -1,5 +1,5 @@
 <template>
-  <modal name="newPost" height="auto" width="378px">
+  <modal name="newPost" height="auto" :width="widthActual()">
     <form class="flex flex-col gap-1 p-4 bg-gray-50 dark:bg-gray-700" v-on:submit="sumbit($event)">
       <h1 class="text-3xl font-bold font-sans text-gray-800 dark:text-gray-300 mb-6">{{ $t('newpost_new_message') }}</h1>
       <label class="flex flex-col gap-2 text-gray-700">
@@ -26,7 +26,7 @@
         </div>
       </section>
       <div class="flex gap-2 mt-3">
-        <button type="submit" class="bg-purple-600 text-gray-50 rounded px-4 py-2">{{ $t('newpost_send') }}</button>
+        <button id="sendButton" :disabled="isDisabled()" type="submit" class="bg-purple-600 text-gray-50 rounded px-4 py-2">{{ $t('newpost_send') }}</button>
         <button v-on:click.prevent="reset()" class="text-red-500 hover:bg-red-500 hover:text-gray-100 rounded px-4 py-2">{{ $t('newpost_cancel') }}</button>
       </div>
     </form>
@@ -40,12 +40,34 @@ export default {
       name: '',
       post: '',
       relation: 'family',
-      error: {}
+      error: {},
+      disabled: false,
     }
   },
   methods: {
     closeModal() {
       this.$modal.hide('newPost')
+    },
+    isDisabled() {
+      return this.disabled
+    },
+    widthActual() {
+        let min = "85%"
+        if(window.innerWidth < 500){
+            return "95%"
+        }
+        else if(window.innerWidth < 700){
+            return "65%"
+        }
+        else if(window.innerWidth < 1000){
+            return "45%"
+        }
+        else if(window.innerWidth < 2500){
+            return "30%"
+        }
+        else{
+            return "20%"
+        }
     },
     sumbit(e) {    
       let data = {
@@ -61,7 +83,7 @@ export default {
       const headers = {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
       };
-
+      this.disabled = true
       this.axios.post('https://stark-eyrie-66508.herokuapp.com/api/post/', data, headers)
         .then(response => response.data)
         .then(json => {
@@ -72,6 +94,7 @@ export default {
             this.error = json.error
             console.log(json.error)
           }
+          this.disabled = false
         })
 
       e.preventDefault();      

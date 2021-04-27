@@ -14,6 +14,11 @@ const router = new VueRouter({
       component: Home
     },
     {
+      path: '/host/:pass/surroundings',
+      name: 'Surroundings',
+      component: () => import('../views/Surroundings.vue')
+    },
+    {
       path: '/host/:pass',
       name: 'HomeHost',
       component: () => import('../views/HomeHost.vue')
@@ -22,7 +27,7 @@ const router = new VueRouter({
       path: '*',
       name: 'NotFound',
       component: () => import('../views/NotFound.vue')
-    }
+    },
   ]
 })
 

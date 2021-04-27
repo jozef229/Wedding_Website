@@ -35,3 +35,12 @@ export default {
   }
 }
 </script>
+
+
+
+<style scoped>
+  html,body{
+    overflow-x: hidden;
+  }
+</style>
+

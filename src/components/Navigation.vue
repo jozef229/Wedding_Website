@@ -48,7 +48,18 @@ export default {
   },
   methods: {
     goto(el) {
-      document.getElementById(el).scrollIntoView();
+
+      if(window.innerWidth <= 1024){
+        this.isOpen = false
+      }
+      
+      const yOffset = -60; 
+      const element = document.getElementById(el);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
+
+      // document.getElementById(el).scrollIntoView();
     },
     showModal() {
       this.$modal.show('newChangeToHost')

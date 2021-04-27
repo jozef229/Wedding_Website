@@ -1,17 +1,20 @@
 <template>
-  <div id="people" class="bg-center bg-cover flex flex-col justify-center items-center mt-16 mb-10">
-    <div class="flex justify-center items-center bg-gray-500 text-gray-100 font-bold text-sm rounded-full ring-4 ring-gray-50 w-32 h-32 -mt-16">
+  <div id="people" class="bg-center bg-cover flex flex-col justify-center items-center mt-4 mb-10">
+    <!-- <div class="flex justify-center items-center bg-gray-500 text-gray-100 font-bold text-sm rounded-full ring-4 ring-gray-50 w-32 h-32 -mt-16">
       <p>{{ $t('people_message_from_friends') }}</p>
-    </div>
-    <div class="border-gray-200  px-8 my-4">
+    </div> -->
+    <!-- <div class="border-gray-200  px-8 my-4">
       <p class="text-gray-100 text-lg font-bold border-gray-400 border-b-4 -my-1 mb-6">{{ $t('people_family_friends_guests') }}</p>
-    </div>
-    <div class="grid grid-rows-3 grid-cols-1 lg:grid-cols-2 grid-flow-row gap-y-4 gap-x-10 mb-32 px-10  overflow-y-auto h-auto scroll-snap-x">
+    </div> -->
+
+    <h2 class="mt-8 mb-10 text-gray-100 text-3xl font-semibold text-center">{{ $t('people_message_from_friends') }}</h2>
+
+    <div class="grid grid-rows-3 grid-cols-1 lg:grid-cols-2 grid-flow-row gap-y-4 sm:gap-x-10 mb-32 sm:px-10 px-2  overflow-y-auto h-auto scroll-snap-x">
       
-      <div class="flex flex-row gap-3 bg-gray-900 bg-opacity-60 p-4 rounded-md w-72 sm:w-96 h-40 shadow-lg"
+      <div class="flex flex-row gap-3 bg-gray-900 bg-opacity-60 p-4 rounded-md sm:w-72 sm:w-96 h-40 shadow-lg"
         v-for="people in this.$store.state.peoples.slice(item_min, item_max)" :key='people.id'>
 
-        <img class="animate-pulse rounded-full w-16 h-16 p-1 m-1 ring ring-pink-600" src="https:\/\/simpuslerep.com\/data\/img\/display-picture\/user\/no-image.png" :alt="people.name">        
+        <img class="animate-pulse rounded-full sm:w-16 h-16 p-1 m-1 ring ring-pink-600" src="https:\/\/simpuslerep.com\/data\/img\/display-picture\/user\/no-image.png" :alt="people.name">        
         <div class="flex justify-between flex-col">
           <div class=" max-h-20 overflow-y-auto">
             <p class="text-base text-gray-300">{{ people.post }}</p>
@@ -42,8 +45,8 @@
       </div>
     </div> -->
 
-      <div  class="grid grid-cols-2">
-        <button v-if="0 != this.item_min" v-on:click="previousPost()" class="mr-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 rounded-md -mt-10 mb-8 w-40 focus:ring-4 focus:ring-black-200 focus:outline-non">
+      <div  class="grid sm:grid-cols-2 grid-cols-1">
+        <button v-if="0 != this.item_min" v-on:click="previousPost()" class="sm:mr-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 rounded-md -mt-10 mb-8 w-40 focus:ring-4 focus:ring-black-200 focus:outline-non">
           <div class="flex">
             <div class="flex-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,7 +59,7 @@
           </div>
         </button>
 
-        <button v-if="0 == this.item_min" class="opacity-0 ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
+        <button v-if="0 == this.item_min" class="opacity-0 sm:ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
           <div class="flex">
             <div class="flex-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="opacity-100 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -69,7 +72,7 @@
           </div>
         </button>
       
-        <button v-if="this.$store.state.peoples.length > item_max" v-on:click="nextPost()" class="ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
+        <button v-if="this.$store.state.peoples.length > item_max" v-on:click="nextPost()" class="sm:ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
           <div class="flex">
             <div class="flex-1">
               {{ $t('people_next') }}
@@ -82,7 +85,7 @@
           </div>
         </button>
 
-        <button v-if="this.$store.state.peoples.length <= item_max" class="opacity-0 ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
+        <button v-if="this.$store.state.peoples.length <= item_max" class="opacity-0 sm:ml-2 bg-gray-600 text-gray-50 shadow-md px-3 py-4 sm:w-40 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-black-200 focus:outline-non">
           <div class="flex">
             <div class="flex-1">
               {{ $t('people_refresh') }}
@@ -140,6 +143,7 @@ export default {
   #people {
     background-image: url('~@/assets/bg-message.png');    
     clip-path: polygon(100% -64px, 100% 90%, 50% 100%, 0 90%, 0 -64px);
+    /* clip-path: polygon(15% 0, 85% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%); */
   }
   ::-webkit-scrollbar {
     width: 15px;

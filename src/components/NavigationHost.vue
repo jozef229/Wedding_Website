@@ -14,9 +14,9 @@
     <div v-if="isOpen" class="align-middle w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow text-lg text-center">
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" href="/">{{ $t('navigationhost_introduction') }}</a> 
+        <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('information')">{{ $t('navigationhost_info') }}</a>
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('transport_program')">{{ $t('navigationhost_program') }}</a>
 
-        <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('information')">{{ $t('navigationhost_info') }}</a>
 
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('wg')">{{ $t('navigationhost_weddings_gift') }}</a>
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('transport_hotel')">{{ $t('navigationhost_accommodation_and_transport') }}</a>
@@ -52,7 +52,16 @@ export default {
   },
   methods: {
     goto(el) {
-      document.getElementById(el).scrollIntoView();
+      // document.getElementById(el).scrollIntoView();
+      if(window.innerWidth <= 1024){
+        this.isOpen = false
+      }
+      
+      const yOffset = -60; 
+      const element = document.getElementById(el);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
       
     },
     showModal() {

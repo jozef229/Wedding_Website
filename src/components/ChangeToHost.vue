@@ -1,5 +1,5 @@
 <template>
-    <modal name="newChangeToHost" height="auto" width="378px">
+    <modal name="newChangeToHost" height="auto" :width="widthActual()">
         <form class="flex flex-col gap-1 p-4 bg-gray-50 dark:bg-gray-700" v-on:submit="sumbit($event)">
         <h1 class="text-3xl font-bold font-sans text-gray-800 dark:text-gray-300 mb-6">{{ $t('changetohost_name') }}</h1>
         <p v-if="show_err" class="flex flex-col gap-2 text-red-700">
@@ -47,7 +47,25 @@ methods: {
         this.pass = ''
         this.error = {}
         this.$modal.hide('newChangeToHost')
-    }
+    },
+    widthActual() {
+        let min = "85%"
+        if(window.innerWidth < 500){
+            return "95%"
+        }
+        else if(window.innerWidth < 700){
+            return "65%"
+        }
+        else if(window.innerWidth < 1000){
+            return "45%"
+        }
+        else if(window.innerWidth < 2500){
+            return "30%"
+        }
+        else{
+            return "20%"
+        }
+    },
 }
 }
 </script>

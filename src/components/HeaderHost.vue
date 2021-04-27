@@ -1,29 +1,29 @@
 <template>
     <div>
-        <div id="header" class="flex flex-col items-center py-8 h-screen max-h-700 w-auto z-50 bg-center">
-        <div class="w-96 text-center sm:mt-36 md:mt-32 lg:mt-28 mt-32">
-            <div class="mt-20 text-gray-100 text-5xl font-quiksand font-semibold mt-4 mb-2">
+        <div id="header" class="flex flex-col items-center py-8 max-h-700 w-auto z-50 bg-center">
+        <div class="sm:w-96 text-center sm:mt-36 md:mt-32 lg:mt-28 mt-20">
+            <div class="mt-5 text-gray-100 text-5xl font-quiksand font-semibold mt-4 mb-2">
                 <span class="border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('headerhost_name') }}</span>
             </div>
-            <div class="mt-20 grid grid-cols-4 gap-6">
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6 p-4">
                 <div>
-                    <div class="bg-gray-600 rounded-lg text-gray-50 text-2xl text-center font-bold p-4">{{ day }}</div>
+                    <div class="bg-gray-600 rounded-lg text-gray-50 text-xl sm:text-2xl text-center font-bold sm:p-4 p-2">{{ day }}</div>
                     <p class="text-center text-gray-50 text-opacity-75">{{ $t('countdown_day') }}</p>
                 </div>
                 <div>
-                    <div class="bg-gray-600 rounded-lg text-gray-50 text-2xl text-center font-bold p-4">{{ hour }}</div>
+                    <div class="bg-gray-600 rounded-lg text-gray-50 text-xl sm:text-2xl text-center font-bold sm:p-4 p-2">{{ hour }}</div>
                     <p class="text-center text-gray-50 text-opacity-75">{{ $t('countdown_hour') }}</p>
                 </div>
                 <div>
-                    <div class="bg-gray-600 rounded-lg text-gray-50 text-2xl text-center font-bold p-4">{{ minute }}</div>
+                    <div class="bg-gray-600 rounded-lg text-gray-50 text-xl sm:text-2xltext-center font-bold sm:p-4 p-2">{{ minute }}</div>
                     <p class="text-center text-gray-50 text-opacity-75">{{ $t('countdown_minute') }}</p>
                 </div>
                 <div>
-                    <div class="bg-gray-600 rounded-lg text-gray-50 text-2xl text-center font-bold p-4">{{ second }}</div>
+                    <div class="bg-gray-600 rounded-lg text-gray-50 text-xl sm:text-2xl text-center font-bold sm:p-4 p-2">{{ second }}</div>
                     <p class="text-center text-gray-50 text-opacity-75">{{ $t('countdown_secound') }}</p>
                 </div>
             </div>
-            <div class="mt-20">
+            <div class="mt-5 p-4">
                 <button v-on:click="showModal()" class="bg-gray-600 text-gray-50 shadow-md px-3 py-4 rounded-md -mt-10 mb-8 focus:ring-4 focus:ring-yellow-200 focus:outline-non">{{ $t('headerhost_invitation') }}</button>
             </div>
         </div>
@@ -45,7 +45,6 @@
             </div>
         </div> 
     </div>  
-
 
     <!-- <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
         <div class="grid sm:grid-cols-2 grid-cols-1">
@@ -236,9 +235,15 @@ export default {
 <style scoped>
     #header {
         background-image: 
-        linear-gradient(0deg, #00000088 20%, #ffffff44 100%), 
-        url('~@/assets/bg_party.png');
+        linear-gradient(0deg, #00000088 30%, #ffffff44 110%), 
+        url('~@/assets/help2.png');
         clip-path: polygon(100% -64px, 100% 90%, 50% 100%, 0 90%, 0 -64px);
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-position:center;
         /* clip-path: polygon(100% 0, 100% calc(100vh - 64px), 50% 100%, 0 calc(100vh - 64px), 0 0); */
     }
 </style>
