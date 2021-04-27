@@ -1,5 +1,5 @@
 <template>
-  <div id="people" class="bg-center bg-cover flex flex-col justify-center items-center mt-4 mb-10">
+  <div id="people" class="bg-left bg-cover flex flex-col justify-center items-center mt-4 mb-10">
     <!-- <div class="flex justify-center items-center bg-gray-500 text-gray-100 font-bold text-sm rounded-full ring-4 ring-gray-50 w-32 h-32 -mt-16">
       <p>{{ $t('people_message_from_friends') }}</p>
     </div> -->
