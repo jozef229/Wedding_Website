@@ -25,9 +25,9 @@
         <a class="px-4 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="showModal()">{{ $t('navigationhost_rsvp') }}</a>
       </div>
       <!-- <div class="locale-changer"> -->
-        <select v-model="$i18n.locale" class="text-gray-300 bg-gray-900 " >
-            <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
-        </select>
+        <!-- <select v-model="$i18n.locale" class="text-gray-300 bg-gray-900 " > -->
+            <!-- <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option> -->
+        <!-- </select> -->
       <!-- </div> -->
     </div>
   </nav>
