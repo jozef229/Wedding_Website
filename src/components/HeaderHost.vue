@@ -86,6 +86,17 @@ import steiner from "../assets/personalized/steiner.jpg"
 import steinerovci from "../assets/personalized/steinerovci.jpg"
 import vojtko from "../assets/personalized/vojtko.jpg"
 import brasko from "../assets/personalized/brasko.jpg"
+import svarcovci from "../assets/personalized/svarcovci.jpg"
+import matich from "../assets/personalized/matich.jpg"
+import sestricka from "../assets/personalized/sestricka.jpg"
+import hrinkovci from "../assets/personalized/hrinkovci.jpg"
+import ujo from "../assets/personalized/ujo.jpg"
+import nemecek from "../assets/personalized/nemecek.jpg"
+import dresto from "../assets/personalized/dresto.jpg"
+import jusko from "../assets/personalized/jusko.jpg"
+import petrov from "../assets/personalized/petrov.jpg"
+import macky from "../assets/personalized/macky.jpg"
+import masaryk from "../assets/personalized/masaryk.jpg"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -112,72 +123,116 @@ export default {
                 let pass = this.$route.params.pass
                 if(pass == "ulicna"){
                     this.personalized.image = ulicna
-                    this.personalized.name = "Dakujeme michi ze si tu"
-                    this.personalized.text = "Dakujeme michi ze si tu"
+                    this.personalized.name = "Ahoj Michi, tešíme sa na teba! :)"
+                }
+                else if(pass == "ujo"){
+                    this.personalized.image = ujo
+                    this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
                 }
                 else if(pass == "halaga"){
                     this.personalized.image = halaga
-                    this.personalized.name = "Ahoj dakujeme ze prides halaga"
+                    this.personalized.name = "Ahoj Paťko, tešíme sa na teba! :)"
+                }
+                else if(pass == "nemecek"){
+                    this.personalized.image = nemecek
+                    this.personalized.name = "Ahoj Andrej, tešíme sa na teba! :) PS: dokumentácie si zo sebou neber :D"
+                }
+                else if(pass == "dresto"){
+                    this.personalized.image = dresto
+                    this.personalized.name = "Ahoj Filip, tešíme sa na teba! PS: bude aj domaca nemusiš víno ani pivo :)"
+                }
+                else if(pass == "jusko"){
+                    this.personalized.image = jusko
+                    this.personalized.name = "Ahoj Jakub, tešíme sa na teba! :) PS: bude domaca"
+                }
+                else if(pass == "petrov"){
+                    this.personalized.image = petrov
+                    this.personalized.name = "Ahoj Ivan, tešíme sa na teba! :)"
+                }
+                else if(pass == "macky"){
+                    this.personalized.image = macky
+                    this.personalized.name = "Ahoj Maťo, tešíme sa na teba! PS: ak neprideš, kuric ta bude strašiť do konca života :)"
+                }
+                else if(pass == "masaryk"){
+                    this.personalized.image = masaryk
+                    this.personalized.name = "Ahoj Dado, tešíme sa na teba! :) PS: Dufam že skončiš horšie ako na tejto fotke z chaty :)"
+                }
+
+                else if(pass == "hrinkovci"){
+                    this.personalized.image = hrinkovci
+                    this.personalized.name = "Ahoj babka a dedko, tešíme sa na vás! :)"
+                }
+                else if(pass == "sestricka"){
+                    this.personalized.image = sestricka
+                    this.personalized.name = "Ahoj Sestrička, tešíme sa na teba! :)"
+                }
+                else if(pass == "svarcovci"){
+                    this.personalized.image = svarcovci
+                    this.personalized.name = "Ahojte Vaness a Maťo, tešíme sa na vás! Veríme, že sa vidíme."
+                }
+                else if(pass == "matich"){
+                    this.personalized.image = matich
+                    this.personalized.name = "Ahoj Marečku, tešíme sa na teba! :) Veríme, že si to s nami prídeš užiť."
                 }
                 else if(pass == "havadej"){
                     this.personalized.image = havadej
-                    this.personalized.name = "Ahoj dakujeme ze prides havadej"
+                    this.personalized.name = "Ahoj Samko, tešíme sa na teba! :) PS: Pre teba alcohol-free."
                 }
                 else if(pass == "holodnakova"){
                     this.personalized.image = holodnakova
-                    this.personalized.name = "Ahoj dakujeme ze prides holodnakova"
+                    this.personalized.name = "Ahoj Lucka, tešíme sa na teba! :)"
                 }
                 else if(pass == "marcinkovci"){
                     this.personalized.image = marcinkovci
-                    this.personalized.name = "Ahoj dakujeme ze prides marcinkovci"
+                    this.personalized.name = "Ahojte Marcinkovci, tešíme sa na vás! :) Verím, že si to s nami prídete užiť."
                 }
                 else if(pass == "palko"){
                     this.personalized.image = palko
-                    this.personalized.name = "Ahoj dakujeme ze prides palko"
+                    this.personalized.name = "Ahoj Jurko, tešíme sa na teba! :) PS: Ak neprídeš, budem ťa strašiť."
                 }
                 else if(pass == "tothova"){
                     this.personalized.image = tothova
-                    this.personalized.name = "Ahoj dakujeme ze prides tothova"
+                    this.personalized.name = "Ahoj Kaji, tešíme sa na teba! :) PS: Dúfam, že si ready na žúrku roka ;)"
                 }
                 else if(pass == "vargovci"){
                     this.personalized.image = vargovci
-                    this.personalized.name = "Ahoj dakujeme ze prides vargovci"
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
                 }
                 else if(pass == "onofrejova"){
                     this.personalized.image = onofrejova
-                    this.personalized.name = "Ahoj dakujeme ze prides onofrejova"
+                    this.personalized.name = "Ahojte Kika & Maťo, tešíme sa na vás! :) Inak Kika, PVP nechaj radšej doma :P"
                 }
                 else if(pass == "bulikovci"){
                     this.personalized.image = bulikovci
-                    this.personalized.name = "Ahoj dakujeme ze prides bulikovci"
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
                 }
                 else if(pass == "gutyan"){
                     this.personalized.image = gutyan
-                    this.personalized.name = "Ahoj dakujeme ze prides gutyan"
+                    this.personalized.name = "Ahoj Adam, tešíme sa na teba! :) PS: Neboj, niekto ťa už na hotel odnesie :P"
                 }
                 else if(pass == "hurtikova"){
                     this.personalized.image = hurtikova
-                    this.personalized.name = "Ahoj dakujeme ze prides hurtikova"
+                    this.personalized.name = "Ahojte Adelka a Pavelko :P tešíme sa na vás! :)"
                 }
                 else if(pass == "sabovci"){
                     this.personalized.image = sabovci
-                    this.personalized.name = "Ahoj dakujeme ze prides sabovci"
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
                 }
                 else if(pass == "steiner"){
                     this.personalized.image = steiner
-                    this.personalized.name = "Ahoj dakujeme ze prides steiner"
+                    this.personalized.name = "Ahojte, mrzí nás, že nemôžete dôjsť, ale snáď na nás budete aspoň myslieť :)"
                 }
                 else if(pass == "steinerovci"){
                     this.personalized.image = steinerovci
-                    this.personalized.name = "Ahoj dakujeme ze prides steinerovci"
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
                 }
                 else if(pass == "vojtko"){
                     this.personalized.image = vojtko
-                    this.personalized.name = "Ahoj dakujeme ze prides vojtko"
+                    this.personalized.name = "Ahoj Lukáško, tešíme sa na teba! :) PS: Snáď aspoň na túto akciu prídeš načas."
                 }
                 else if(pass == "brasko"){
                     this.personalized.image = brasko
-                    this.personalized.name = "Ahoj dakujeme ze prides brasko"
+                    this.personalized.name = "Ahoj bráško a švagorko, tešíme sa na teba! :)"
                 }
                 // else if(pass == ""){
                 //     this.personalized.image = 
