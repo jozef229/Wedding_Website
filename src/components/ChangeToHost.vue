@@ -35,9 +35,26 @@ methods: {
     },
     sumbit(e) {    
         // console.log(this.pass)
-        var names = ["veronika", "ujo", "nemecek", "dresto", "jusko", "petrov", "macky", "masaryk", "sestricka", "hrinkovci", "ulicna", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "tothova", "vargovci", "onofrejova", "bulikovci", "gutyan", "hurtikova", "sabovci", "steiner", "steinerovci", "vojtko", "brasko"];
-        if(names.includes(this.pass)){
-            window.location.href = "/host/" + this.pass 
+
+        var meno = this.pass
+        var r=meno.toLowerCase();
+        r = r.replace(new RegExp(/\s/g),"");
+        r = r.replace(new RegExp(/[àáâãäå]/g),"a");
+        r = r.replace(new RegExp(/æ/g),"ae");
+        r = r.replace(new RegExp(/[çč]/g),"c");
+        r = r.replace(new RegExp(/[š]/g),"s");
+        r = r.replace(new RegExp(/[èéêë]/g),"e");
+        r = r.replace(new RegExp(/[ìíîï]/g),"i");
+        r = r.replace(new RegExp(/ñ/g),"n");                
+        r = r.replace(new RegExp(/[òóôõö]/g),"o");
+        r = r.replace(new RegExp(/œ/g),"oe");
+        r = r.replace(new RegExp(/[ùúûü]/g),"u");
+        r = r.replace(new RegExp(/[ýÿ]/g),"y");
+        r = r.replace(new RegExp(/\W/g),"");
+        console.log(r)
+        var names = ["veronika", "nela", "ujopeto", "ujoluky", "nemecek", "dresto", "jusko", "petrov", "macky", "masaryk", "sestricka", "hrinkovci", "ulicna", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "tothova", "vargovci", "pvp", "bulikovci", "gutyan", "hurtikovci", "sabovci", "steiner", "steinerovci", "vojtko", "brasko"];
+        if(names.includes(r)){
+            window.location.href = "/host/" + r
         }
         else{
             this.show_err = true

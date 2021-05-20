@@ -41,7 +41,7 @@
                 </div> -->
             </div>
             <div class="pb-10 flex flex-row justify-center items-center flex-col p-4 gap-4">
-                <img class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" alt="Prvý pokus">
+                <img class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" >
             </div>
         </div> 
     </div>  
@@ -77,10 +77,10 @@ import marcinkovci from "../assets/personalized/marcinkovci.jpg"
 import palko from "../assets/personalized/palko.jpg"
 import tothova from "../assets/personalized/tothova.jpg"
 import vargovci from "../assets/personalized/vargovci.jpg"
-import onofrejova from "../assets/personalized/onofrejova.jpg"
+import pvp from "../assets/personalized/onofrejova.jpg"
 import bulikovci from "../assets/personalized/bulikovci.jpg"
 import gutyan from "../assets/personalized/gutyan.jpg"
-import hurtikova from "../assets/personalized/hurtikova.jpg"
+import hurtikovci from "../assets/personalized/hurtikova.jpg"
 import sabovci from "../assets/personalized/sabovci.jpg"
 import steiner from "../assets/personalized/steiner.jpg"
 import steinerovci from "../assets/personalized/steinerovci.jpg"
@@ -90,7 +90,7 @@ import svarcovci from "../assets/personalized/svarcovci.jpg"
 import matich from "../assets/personalized/matich.jpg"
 import sestricka from "../assets/personalized/sestricka.jpg"
 import hrinkovci from "../assets/personalized/hrinkovci.jpg"
-import ujo from "../assets/personalized/ujo.jpg"
+import ujopeto from "../assets/personalized/ujo.jpg"
 import nemecek from "../assets/personalized/nemecek.jpg"
 import dresto from "../assets/personalized/dresto.jpg"
 import jusko from "../assets/personalized/jusko.jpg"
@@ -125,9 +125,19 @@ export default {
                     this.personalized.image = ulicna
                     this.personalized.name = "Ahoj Michi, tešíme sa na teba! :)"
                 }
-                else if(pass == "ujo"){
-                    this.personalized.image = ujo
+                else if(pass == "ujopeto"){
+                    this.personalized.image = ujopeto
                     this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
+                }
+                else if(pass == "ujoluky"){
+                    // this.personalized.image = null
+                    this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
+                    
+                }
+                else if(pass == "nela"){
+                    // this.personalized.image = null
+                    this.personalized.name = "Ahojte, tešíme sa na teba! :)"
+                    
                 }
                 else if(pass == "halaga"){
                     this.personalized.image = halaga
@@ -157,7 +167,6 @@ export default {
                     this.personalized.image = masaryk
                     this.personalized.name = "Ahoj Dado, tešíme sa na teba! :) PS: Dufam že skončiš horšie ako na tejto fotke z chaty :)"
                 }
-
                 else if(pass == "hrinkovci"){
                     this.personalized.image = hrinkovci
                     this.personalized.name = "Ahoj babka a dedko, tešíme sa na vás! :)"
@@ -198,8 +207,8 @@ export default {
                     this.personalized.image = vargovci
                     this.personalized.name = "Ahojte, tešíme sa na vás! :)"
                 }
-                else if(pass == "onofrejova"){
-                    this.personalized.image = onofrejova
+                else if(pass == "pvp"){
+                    this.personalized.image = pvp
                     this.personalized.name = "Ahojte Kika & Maťo, tešíme sa na vás! :) Inak Kika, PVP nechaj radšej doma :P"
                 }
                 else if(pass == "bulikovci"){
@@ -210,8 +219,8 @@ export default {
                     this.personalized.image = gutyan
                     this.personalized.name = "Ahoj Adam, tešíme sa na teba! :) PS: Neboj, niekto ťa už na hotel odnesie :P"
                 }
-                else if(pass == "hurtikova"){
-                    this.personalized.image = hurtikova
+                else if(pass == "hurtikovci"){
+                    this.personalized.image = hurtikovci
                     this.personalized.name = "Ahojte Adelka a Pavelko :P tešíme sa na vás! :)"
                 }
                 else if(pass == "sabovci"){
@@ -240,12 +249,12 @@ export default {
                 //     this.personalized.text = ""
                 // }
                 else {
-                    this.personalized.image = require('@/assets/mima.jpg')
+                    // this.personalized.image = require('@/assets/mima.jpg')
                     return false
                 }
                 return true
             } catch (e) {
-                this.personalized.image = require('@/assets/mima.jpg')
+                // this.personalized.image = require('@/assets/mima.jpg')
                 return false
             }
         },
