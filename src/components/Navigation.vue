@@ -15,7 +15,7 @@
       <div class="text-sm lg:flex-grow text-lg text-center">
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('header')">{{ $t('navigation_introduction') }}</a> 
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('our-story')">{{ $t('navigation_our_story') }}</a>
-        <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('people')">{{ $t('navigation_message') }}</a>
+        <!-- <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('people')">{{ $t('navigation_message') }}</a> -->
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('galery')">{{ $t('navigation_gallery') }}</a>
         <a class="px-4 border-gray-600 lg:border-r-2 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="goto('location')">{{ $t('navigation_address') }}</a>
         <a class="px-4 text-gray-300 block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:underline" @click="showModal()">{{ $t('navigation_host') }}</a>

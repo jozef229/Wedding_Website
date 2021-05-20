@@ -5,9 +5,9 @@
       <div class="sm:w-96 text-center sm:mt-20 md:mt-20 lg:mt-20 mt-20">
         <div class="text-gray-600 text-2xl font-paris font-semibold italic tracking-widest">{{ $t('bigheader_tongue') }}</div>
         <div class="text-gray-600 text-4xl font-quiksand font-semibold mt-4 mb-2">
-          <span class="border-t border-b border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('bigheader_mima') }}</span>
+          <span class="border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('bigheader_mima') }}</span>
           ♡
-          <span class="border-t border-b border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('bigheader_jozo') }}</span>
+          <span class="border-gray-200 flex-row-reverse border-opacity-50 tracking-widest">{{ $t('bigheader_jozo') }}</span>
         </div>
       </div>
     </div>
@@ -34,14 +34,14 @@
         <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/mima.jpg" alt="mima">
         <p class="text-gray-700 font-bold text-base mt-2">{{ $t('bigheader_bride') }}</p>
         <p class="text-2xl text-gray-600 font-quiksand my-3 text-center">{{ $t('bigheader_full_name_mima') }}</p>
-        <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_mima_citation') }}</p>
+        <!-- <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_mima_citation') }}</p> -->
         <sosial-media-mima class="text-gray-700 text-sm" />
       </div>
       <div ref="trigger2" class="flex flex-col justify-start items-center p-4 border border-gray-200">
         <img class="rounded-full shadow-md my-2 w-32 h-32" src="@/assets/jozo.jpg" alt="jozef">
         <p class="text-gray-700 font-bold text-base mt-2">{{ $t('bigheader_groom') }}</p>
         <p class="text-2xl text-gray-600 font-quiksand my-3 text-center">{{ $t('bigheader_full_name_jozo') }}</p>
-        <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_jozo_citation') }}</p>
+        <!-- <p class="max-w-64 text-center text-sm text-gray-700">{{ $t('bigheader_jozo_citation') }}</p> -->
         <sosial-media-jozo class="text-gray-700 text-sm" />
       </div>
     </div>
