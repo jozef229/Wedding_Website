@@ -41,7 +41,7 @@
                 </div> -->
             </div>
             <div class="pb-10 flex flex-row justify-center items-center flex-col p-4 gap-4">
-                <img class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" >
+                <img v-if="personalized.image" class="flex-shrink h-72 rounded-lg shadow-lg" :src="personalized.image" >
             </div>
         </div> 
     </div>  
@@ -125,6 +125,12 @@ export default {
                     this.personalized.image = ulicna
                     this.personalized.name = "Ahoj Michi, tešíme sa na teba! :)"
                 }
+
+                if(pass == "billy"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Erik a Natálka, tešíme sa na vás! :)"
+                }
+
                 else if(pass == "ujopeto"){
                     this.personalized.image = ujopeto
                     this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
