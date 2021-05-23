@@ -137,33 +137,33 @@ export default {
                     return true
                 }
                 else if(pass == "ujoluky"){
-                    // this.personalized.image = null
+                    this.personalized.image = null
                     this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
-                    return true
+                    // return true
                     
                 }
                 else if(pass == "nela"){
-                    // this.personalized.image = null
+                    this.personalized.image = null
                     this.personalized.name = "Ahojte, tešíme sa na vás! :)"
-                    return true
+                    // return true
                     
                 }
                 else if(pass == "varga"){
-                    // this.personalized.image = null
+                    this.personalized.image = null
                     this.personalized.name = "Ahojte, tešíme sa na vás! :)"
-                    return true
+                    // return true
                     
                 }
                 else if(pass == "dusan"){
-                    // this.personalized.image = null
+                    this.personalized.image = null
                     this.personalized.name = "Ahoj, tešíme sa na teba! :)"
-                    return true
+                    // return true
                     
                 }
                 else if(pass == "szabovci"){
-                    // this.personalized.image = null
+                    this.personalized.image = null
                     this.personalized.name = "Ahojte, tešíme sa na vás! :)"
-                    return true
+                    // return true
                     
                 }
                 else if(pass == "halaga"){
