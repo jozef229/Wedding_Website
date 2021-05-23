@@ -13,12 +13,13 @@
             
         </a>
 
-
+        <a class="mt-4 text-gray-600 font-bold space-x-4" href="https://fb.me/e/2m6epgavb">
         <svg class="h-10 w-10 text-blue-600 fill-current rounded border-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <title>Twitter</title>
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
         </svg>
-
+        </a>
+        
         <h2 class="text-gray-600 mb-5 mt-5 text-3xl font-semibold text-center">{{ $t('information_foreigners') }}</h2>
         <div class="text-gray-600 text-base text-center max-w-lg" @click="goSurroundings()">
             {{ $t('info_Surroundings') }}
