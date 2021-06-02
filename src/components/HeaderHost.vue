@@ -31,10 +31,11 @@
 
 
 
-    <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center h-96">
+
+    <div v-if="imageByPass()" class="bg-local bg-center bg-cover w-full flex flex-col justify-center items-center ">
         <div class="grid sm:grid-cols-1 grid-cols-1">
             <div class="flex flex-row justify-center items-center flex-col p-4 gap-4">
-                <h2 class="text-gray-600 mt-10 text-3xl font-semibold text-center">{{ personalized.name }}</h2>
+                <h2 class="text-gray-600 mt-8 text-3xl max-w-lg text-base font-semibold text-center">{{ personalized.name }}</h2>
                 <!-- <div class="flex-none w-80"></div> -->
                 <!-- <div class="flex-grow w-auto w-96">
                     <p class="text-gray-600 text-base text-center max-w-lg">{{ personalized.text}}</p>
@@ -99,6 +100,11 @@ import macky from "../assets/personalized/macky.jpg"
 import masaryk from "../assets/personalized/masaryk.jpg"
 
 
+import huda from "../assets/personalized/huda.jpg"
+import thily from "../assets/personalized/thily.jpg"
+import milka from "../assets/personalized/milka.jpg"
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
@@ -117,6 +123,12 @@ export default {
         picker: ''
         }
     },
+
+
+
+    
+
+
     methods: {
         imageByPass: function() {
             try {
@@ -136,6 +148,73 @@ export default {
                     this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"
                     return true
                 }
+
+
+
+                else if(pass == "dxc"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Peťo, tešíme sa na teba a dúfame, že prídeš :)"
+                    // return true
+                    
+                }
+                else if(pass == "huda"){
+                    this.personalized.image = huda
+                    this.personalized.name = "Ahoj Simi, kedže sa nám opatrenia uvoľňujú, boli by sme radi, ak by ste náš veľký deň prišli osláviť spolu s nami. Tešíme sa na teba a tvojho budúceho mužíčka! :)"
+                    return true
+                    
+                }
+                else if(pass == "thily"){
+                    this.personalized.image = thily
+                    this.personalized.name = "Hey Thi Ly, we are looking forward to invting you to the best party of the year - our wedding! :) Hope we will see each other there! I am sure there will be minimal restrictions in August and therefore no is not an answer :)"
+                    // i18n.locale = 'en'
+                    this.$i18n.locale = 'en'
+                    return true
+                    
+                }
+                else if(pass == "jacques"){
+                    this.personalized.image = null
+                    this.personalized.name = "Hey Jacques, we are looking forward to invting you to the best party of the year - our wedding! :) Hope we will see each other there! I am sure there will be minimal restrictions in August and therefore no is not an answer :)"
+                    // return true
+                    this.$i18n.locale = 'en'
+                    
+                }
+                else if(pass == "ele"){
+                    this.personalized.image = null
+                    this.personalized.name = "Hey Ele, we are sorry you cannot join us at our wedding. Nevertherless, thank you for being part of our lives and hope we see each other soon!"
+                    // return true
+                    this.$i18n.locale = 'en'
+                    
+                }
+                else if(pass == "alma"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Alma, rada by sme ťa pozvali na našu svadbu! :) Dúfame, že sa vidíme."
+                    // return true
+                    this.$i18n.locale = 'en'
+                    
+                }
+                else if(pass == "milka"){
+                    this.personalized.image = milka
+                    this.personalized.name = "Ahoj Milka, síce sme sa posledné roky veľmi nevídali, no aj tak nikdy nezabudnem na bir, iki, uč, dort, beš a kopec ďalších zážitkov a preto by sme boli radi, ak by si ste sa k nám aj s pánom manželom pridali v náš veľký deň :) Dúfame, že sa vidíme."
+                    return true
+                    
+                }
+                else if(pass == "hrusovska"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Danka, aj keď sme posledné roky neboli úplne často v kontakte, nikdy nezabudnem na kopec zážitkov, ktoré spolu máme a preto by sme boli radi, ak by si sa k nám aj so svojím pánom Košičanom pridala v náš veľký deň! :) Dúfame, že sa vidíme."
+                    // return true
+                    
+                }
+                else if(pass == "ocko"){
+                    this.personalized.image = sabovci
+                    this.personalized.name = "Ahoooj oci, tešíme sa na teba! :)"
+                    return true
+                }
+
+
+
+
+
+
                 else if(pass == "ujoluky"){
                     this.personalized.image = null
                     this.personalized.name = "Ahoj ujo, tešíme sa na teba! :)"

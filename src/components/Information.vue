@@ -21,11 +21,11 @@
         </a>
         
         <h2 class="text-gray-600 mb-5 mt-5 text-3xl font-semibold text-center">{{ $t('information_foreigners') }}</h2>
-        <div class="text-gray-600 text-base text-center max-w-lg" @click="goSurroundings()">
+        <div class="text-gray-600 text-base text-center max-w-lg" @click="goSurroundings()" style="cursor:pointer">
             {{ $t('info_Surroundings') }}
         </div>
         
-        <img class="shadow-md mt-8 my-2 w-4/5 sm:w-2/5" src="@/assets/traveler.jpg" @click="goSurroundings()">
+        <img style="cursor:pointer" class="shadow-md mt-8 my-2 w-4/5 sm:w-2/5" src="@/assets/traveler.jpg" @click="goSurroundings()">
     </div>  
     
 </template>

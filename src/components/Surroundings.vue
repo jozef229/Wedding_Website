@@ -82,6 +82,23 @@ export default {
         }
     },
     mounted() {
+        let pass = this.$route.params.pass
+        if(pass == "alma"){
+            this.$i18n.locale = 'en'
+        }
+        else if(pass == "thily"){
+            this.$i18n.locale = 'en'
+            
+        }
+        else if(pass == "jacques"){
+            this.$i18n.locale = 'en'
+        }
+        else if(pass == "ele"){
+            this.$i18n.locale = 'en'
+        }
+        else{
+            this.$i18n.locale = 'sk'
+        }
         document.title = "Jožo a Mima" 
         // const target = this.$refs.galery.childNodes
         const tl = gsap.timeline({})

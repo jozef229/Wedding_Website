@@ -103,7 +103,7 @@
   "navigationhost_info": "Ďalšie informácie",
 
   "navigationhost_accommodation_and_transport": "Ubytovanie a doprava",
-  "navigationhost_weddings_gift": "Svadobné dary",
+  "navigationhost_weddings_gift": "Svadobné kvety",
   "navigationhost_photo_after_weddings": "Fotky po svadbe",
   "navigationhost_insert_photo_weddings": "Chcem nahrať fotky",
   "navigationhost_rsvp": "Potvrdenie pozvania",
@@ -173,13 +173,14 @@
   "headerhost_name": "Párty začína za",
   "headerhost_invitation": "Potvrdenie alebo odmietnutie pozvania na svadbu",
 
-  "weddinggift_name": "Svadobné dary",
+  "weddinggift_name": "Svadobné kvety",
   "weddinggift_text": "Jediný dar, ktorý chceme je ten, aby ste nám prišli na svadbu. Prosím, nenoste kvety. Naozaj, je to škoda a akurát zvädnú. Ak naozaj chcete niečo doniesť, radšej doneste nejaký žreb, poprípade niečo vami vyrobené.",
 
   "information_name": "Ďalšie informácie",
   "information_foreigners": "Pre cezpoľných",
   "information_text": "Tu sa budú nachádzať ďalšie informácie o svadbe, ktoré môžu byť pre vás zaujímavé.",
   "info_Surroundings": "Ak ste cezpoľný a chcete si v Prešove a na východnom Slovensku pozrieť nejaké pamiatky, kliknite na obrázok nižšie:",
+
 
   "surroundings_name_PM": "PREŠOV MESTO",
   "surroundings_PM": "Mesto Prešov je považované za metropolu regiónu Šariš. Prešov sa rozprestiera v Košickej kotline, vzdielaný od mesta Košice 36 km. Je správnym centrom Prešovského samosprávneho kraja a taktiež významným hospodárskym centrom vo východnej časti Slovenska. Mesto Prešov už v minulosti bolo označované ako metropola kultúry a vzdelania. Na Hlavnej ulici mesta Prešov je sústredených viacero historicko-kultúrnych objektov. V roku 1955 bolo historické jadro mesta vyhlásené za mestskú pamiatkovú rezerváciu. V meste sa nachádza veľa historických objektov, napríklad: <br><br>Bosáková banka- PrešovBosáková banka bola postavená na začiatku 30. rokov 20. storočia, na rohu Hlavnej a Levočskej ulice. Pôvodným účelom budovy mal byť finančný ústav. Budova dostala pomenovanie po Michalovi Bosákovi, slovenskom vysťahovalcovi, ktorý sa vypracoval na špičkového bankára v USA. V Bratislave založil i americko-slovenskú banku, ktorej jedna z prevádzok sídlila aj v Prešove. <br><br>Caraffova väznica je historickou pamiatkou v gotického štýlu. V minulosti tu bolo nespravodlivo uväznených a odsúdených 24 uhorských zemanov a mešťanov. Počas Caraffovho povstania – Prešovské jatky boli popravení. <br><br>Evanjelické kolégium sa stalo základom v 18. storočí pre vysoké školstvo v Prešove. <br><br>Gréckokatolícky chrám sv. Jána Krstiteľa je gotickým kostolom zo 14. storočia, nachádzajúci sa na južnom konci pešej zóny. V chráme sú umiestnené viaceré vzácnosti – ikonostas z polovice 19. storočia, jednu zo štyroch replík vzácneho Turínskeho plátna a pozostatky blahoslaveného Pavla Petra Gojdiča a Vasiľa Hopka. <br><br>Rákocziho palác tvoril pôvodne dva meštianske domy, ktoré dal v  16. storočí sedmohradské knieža Žigmund Rákoci prebudovať na honosný mestský palác v renesančnom slohu. V roku 1633 tu prebiehali rokovania medzi zástupcami sedmohradského kniežaťa Juraja I. Rákociho a cisára Ferdinanda II., a v ktorom bol podpísaný prešovský mier. Od roku roku 1711 bol  vystriedal viacerých majiteľov. V súčasnosti je v budove umiestnené Šarišské múzeum. <br><br>Neptúnova fontána – dal ju postaviť v 19. storočí židovský obchodník Marek Holländer, ako prejav vďačnosti mestu, ktoré mu dovolilo v meste Prešov usadiť a podnikať. <br><br>Radnica bola pôvodne stredoveký meštiansky dom. V 16. storočí slúžila ako mestská vináreň. V 19. storočí bola po požiari zrekonštruovaná a nadstavená o podlažie. V súčasnosti má v nej sídlo primátor a mestský úrad. <br><br>Župný dom je budova  rokokovo-klasického štýlu, palácového typu určená na administratívne účely bývalej Šarišskej stolice. Po druhej svetovej vojne bol dom vo veľkej miere zdevastovaný, bolo potrebná jeho rekonštrukcia. V súčasnosti sa jeho priestory poskytujú viacerým inštitúciám. <br><br>Medzi ďalšie pamiatky, ktoré môžu návštevníci mesta Prešov obdivovať sú napríklad – Palác Klobušíckých, Floriánova brána, Čierny orol, Mestská hvezdáreň, Kumšt a viaceré kostoly – Evanjelický a.v. chrám sv- Trojice, Františkánsky Kostol, Kláštor františkánov, Gréckokatolícky biskupský palác a Židovská synagóga-múzeum židovstva. <br><br>Každá časť mesta Prešov dýcha históriou. Po obchôdzke Hlavnej ulice Prešova majú návštevníci historické pamiatky ako na dlani. S návštevou historického mesta budú spokojní i nároční turisti, ktorí vyhľadávajú historické pamiatky.",
@@ -203,5 +204,4 @@
   "surroundings_BCKS": "Medzi najnovšie atrakcie na Slovensku patrí chodník korunami stromov Bachledka. Súčasťou tejto veľkolepej atrakcie v Bachledovej doline je aj vyhliadková veža. Ak budete chcieť, vedie z nej aj tobogán, po ktorom sa môžete spustiť. Tento chodník korunami stromov nájdete neďaleko Ždiaru. Dá sa tam vyviezť lanovkou, prípadne si urobíte menšiu väčšiu prechádzku. Je to len na vás.",
   "surroundings_name_BAR": "BAR A DISKOTÉKA",
   "surroundings_BAR": "Pár barov pre zábavu: Christiania, Dobré časy, Agát – „je to krčma, kde sa ideš lacno rozsekať pred párty“, Bizzare, Lanový park – „dôchodnyke tu kávu zapíjajú vodkou“, Staré Mexiko, Aquabelly, Wave <br>Diskotéky: Encore, Ponorka"
-  
 }
