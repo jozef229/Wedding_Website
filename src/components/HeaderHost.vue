@@ -212,7 +212,12 @@ export default {
 
 
 
-
+                else if(pass == "veronika"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte, tešíme sa na Vás! :)"
+                    // return true
+                    
+                }
 
 
                 else if(pass == "ujoluky"){
