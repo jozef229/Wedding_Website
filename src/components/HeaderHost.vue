@@ -213,7 +213,7 @@ export default {
                 }
                 else if(pass == "samsonovci"){
                     this.personalized.image = null
-                    this.personalized.name = "Ahooojte Samsonovci, tešíme sa na Vás! :)"
+                    this.personalized.name = "Ahojte Robčo a Barborka, radi by sme Vás touto cestou pozvali na našu svadbu. Dúfame, že sa vidíme! :) Tešíme sa na Vás."
                     // return true
                 }
 
