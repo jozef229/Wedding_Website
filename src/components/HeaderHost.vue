@@ -99,6 +99,8 @@ import petrov from "../assets/personalized/petrov.jpg"
 import macky from "../assets/personalized/macky.jpg"
 import masaryk from "../assets/personalized/masaryk.jpg"
 
+import jacques from "../assets/personalized/jacques.jpg"
+import ele from "../assets/personalized/ele.jpg"
 
 import huda from "../assets/personalized/huda.jpg"
 import thily from "../assets/personalized/thily.jpg"
@@ -172,17 +174,17 @@ export default {
                     
                 }
                 else if(pass == "jacques"){
-                    this.personalized.image = null
+                    this.personalized.image = jacques
                     this.personalized.name = "Hey Jacques, we are looking forward to invting you to the best party of the year - our wedding! :) Hope we will see each other there! I am sure there will be minimal restrictions in August and therefore no is not an answer :)"
-                    // return true
                     this.$i18n.locale = 'en'
+                    return true
                     
                 }
                 else if(pass == "ele"){
-                    this.personalized.image = null
+                    this.personalized.image = ele
                     this.personalized.name = "Hey Ele, we are sorry you cannot join us at our wedding. Nevertherless, thank you for being part of our lives and hope we see each other soon!"
-                    // return true
                     this.$i18n.locale = 'en'
+                    return true
                     
                 }
                 else if(pass == "alma"){
@@ -208,6 +210,11 @@ export default {
                     this.personalized.image = sabovci
                     this.personalized.name = "Ahoooj oci, tešíme sa na teba! :)"
                     return true
+                }
+                else if(pass == "samsonovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahooojte Samsonovci, tešíme sa na Vás! :)"
+                    // return true
                 }
 
 

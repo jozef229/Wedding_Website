@@ -52,7 +52,7 @@ methods: {
         r = r.replace(new RegExp(/[ýÿ]/g),"y");
         r = r.replace(new RegExp(/\W/g),"");
         console.log(r)
-        var names = ["szabovci", "dusan", "varga", "veronika", "nela", "ujopeto", "ujoluky", "nemecek", "dresto", "jusko", "petrov", "macky", "masaryk", "sestricka", "hrinkovci", "ulicna", "billy", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "tothova", "vargovci", "pvp", "bulikovci", "gutyan", "hurtikovci", "sabovci", "steiner", "steinerovci", "vojtko", "brasko", "dxc", "huda", "thily", "jacques", "ele", "alma", "milka", "hrusovska", "ocko"];
+        var names = ["szabovci", "samsonovci", "dusan", "varga", "veronika", "nela", "ujopeto", "ujoluky", "nemecek", "dresto", "jusko", "petrov", "macky", "masaryk", "sestricka", "hrinkovci", "ulicna", "billy", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "tothova", "vargovci", "pvp", "bulikovci", "gutyan", "hurtikovci", "sabovci", "steiner", "steinerovci", "vojtko", "brasko", "dxc", "huda", "thily", "jacques", "ele", "alma", "milka", "hrusovska", "ocko"];
         if(names.includes(r)){
             window.location.href = "/host/" + r
         }
