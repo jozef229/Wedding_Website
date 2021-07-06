@@ -257,6 +257,33 @@ export default {
                     // return true
                     
                 }
+
+
+
+                else if(pass == "onofrejovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
+                    // return true
+                    
+                }
+                else if(pass == "simovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
+                    // return true
+                    
+                }
+                else if(pass == "horvathovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte, tešíme sa na vás! :)"
+                    // return true
+                    
+                }
+
+
+
+
+
+
                 else if(pass == "halaga"){
                     this.personalized.image = halaga
                     this.personalized.name = "Ahoj Paťko, tešíme sa na teba! :)"
