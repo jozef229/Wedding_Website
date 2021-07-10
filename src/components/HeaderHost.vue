@@ -279,6 +279,13 @@ export default {
                     
                 }
 
+                else if(pass == "patka"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Paťka, tešíme sa na teba! :)"
+                    // return true
+                    
+                }
+
 
 
 
