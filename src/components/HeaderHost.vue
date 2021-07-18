@@ -152,6 +152,50 @@ export default {
                 }
 
 
+                else if(pass == "mareckovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Marečkovci, tešíme sa na Vás !!! :)"
+                    // return true
+                    
+                }
+
+                else if(pass == "tothy"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Tothy-ovci, tešíme sa na Vás, a dúfame že prídete !!! :)"
+                    // return true
+                    
+                }
+                else if(pass == "anka"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Anka, tešíme sa na teba a dúfame, že prídeš :)"
+                    // return true
+                    
+                }
+                else if(pass == "susedia"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Susedia, tešíme sa na Vás a dúfame, že prídete :)"
+                    // return true
+                    
+                }
+                else if(pass == "miki"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahoj Miki, tešíme sa na teba a dúfame, že prídeš :)"
+                    // return true
+                    
+                }
+                else if(pass == "palovci"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Paľovci :D, tešíme sa na Vás a dúfame, že prídete :)"
+                    // return true
+                    
+                }
+
+
+
+
+
+
+
 
                 else if(pass == "dxc"){
                     this.personalized.image = null
