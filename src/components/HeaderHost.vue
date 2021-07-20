@@ -190,6 +190,13 @@ export default {
                     
                 }
 
+                else if(pass == "nagy"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte Timea :D, tešíme sa na teba a dúfame, že prídeš :)"
+                    // return true
+                    
+                }
+
 
 
 
