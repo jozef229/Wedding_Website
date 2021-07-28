@@ -52,7 +52,7 @@ methods: {
         r = r.replace(new RegExp(/[ýÿ]/g),"y");
         r = r.replace(new RegExp(/\W/g),"");
         console.log(r)
-        var names = [ "nagy", "tothy", "anka", "miki", "susedia", "palovci", "mareckovci",  "szabovci", "samsonovci", "dusan", "varga", "veronika", "nela", "ujopeto", "ujoluky", "nemecek", "dresto", "jusko", "petrov", "macky", "masaryk", "sestricka", "hrinkovci", "ulicna", "billy", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "patka", "tothova", "vargovci", "pvp", "bulikovci", "gutyan", "hurtikovci", "sabovci", "steiner", "steinerovci", "vojtko", "brasko", "dxc", "huda", "thily", "jacques", "ele", "alma", "milka", "hrusovska", "ocko", "onofrejovci", "simovci", "horvathovci" ];
+        var names = [ "nagy", "tothy", "anka", "miki", "susedia", "palovci", "mareckovci",  "szabovci", "samsonovci", "dusan", "varga", "veronika", "nela", "ujopeto", "ujoluky", "nemecek", "dresto", "jusko", "petrov", "macky", "mato", "masaryk", "sestricka", "hrinkovci", "ulicna", "billy", "svarcovci", "matich", "halaga", "havadej", "holodnakova", "marcinkovci", "palko", "patka", "tothova", "vargovci", "pvp", "bulikovci", "gutyan", "hurtikovci", "sabovci", "steiner", "steinerovci", "vojtko", "brasko", "dxc", "huda", "thily", "jacques", "ele", "alma", "milka", "hrusovska", "ocko", "onofrejovci", "simovci", "horvathovci" ];
         if(names.includes(r)){
             window.location.href = "/host/" + r
         }

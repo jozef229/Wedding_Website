@@ -84,6 +84,7 @@ import gutyan from "../assets/personalized/gutyan.jpg"
 import hurtikovci from "../assets/personalized/hurtikova.jpg"
 import sabovci from "../assets/personalized/sabovci.jpg"
 import steiner from "../assets/personalized/steiner.jpg"
+import mato from "../assets/personalized/mato.jpg"
 import steinerovci from "../assets/personalized/steinerovci.jpg"
 import vojtko from "../assets/personalized/vojtko.jpg"
 import brasko from "../assets/personalized/brasko.jpg"
@@ -138,6 +139,11 @@ export default {
                 if(pass == "ulicna"){
                     this.personalized.image = ulicna
                     this.personalized.name = "Ahoj Michi, tešíme sa na teba! :)"
+                    return true
+                }
+                if(pass == "mato"){
+                    this.personalized.image = mato
+                    this.personalized.name = "Ahoj Maťo, tešíme sa na teba! :)"
                     return true
                 }
                 if(pass == "billy"){
