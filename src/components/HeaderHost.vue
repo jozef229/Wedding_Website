@@ -171,6 +171,12 @@ export default {
                     // return true
                     
                 }
+                else if(pass == "technici"){
+                    this.personalized.image = null
+                    this.personalized.name = "Ahojte naši technici, tešíme sa na Vás, a sme radi že vás poznáme !!! :)"
+                    // return true
+                    
+                }
                 else if(pass == "anka"){
                     this.personalized.image = null
                     this.personalized.name = "Ahoj Anka, tešíme sa na teba a dúfame, že prídeš :)"
